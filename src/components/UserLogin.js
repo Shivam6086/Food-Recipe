@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
-const Login = () => {
+const UserLogin = () => {
   const [userId, setUserName] = useState();
   const [pwd, setPassword] = useState();
   const navig = useNavigate();
@@ -42,4 +42,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default UserLogin;
