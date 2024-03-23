@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  background-color: #ff005d;
+  font-weight: 300;
+}
+.nav ul li {
+  margin: 6rem;
+}
+
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
