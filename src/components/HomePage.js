@@ -4,17 +4,17 @@ import "./Style.css";
 const Homepage = () => {
   return (
     <div>
-      <nav className="nav">
+      <nav className="top">
         <h1>Welcome to Food Recipe</h1>
         <ul>
+        <li>
+            <Link to="/getrecipe">About Recipe</Link>
+          </li>
           <li>
             <Link to="/">Go to Home</Link>
           </li>
           <li>
-            <Link to="/recipe">About Recipe</Link>
-          </li>
-          <li>
-            <Link to="/login">Login Here</Link>
+            <Link to="/getlogin">Login Here</Link>
           </li>
         </ul>
       </nav>

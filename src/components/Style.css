@@ -1,4 +1,9 @@
-.nav {
+
+.top ul li {
+  margin: 6rem;
+}
+
+.top {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -6,12 +11,8 @@
   background-color: #ff005d;
   font-weight: 300;
 }
-.nav ul li {
-  margin: 6rem;
-}
 
-
-.nav ul {
+.top ul {
   display: flex;
   align-items: center;
   justify-content: space-around;

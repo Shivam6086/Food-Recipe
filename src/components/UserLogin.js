@@ -3,8 +3,9 @@ import "./Login.css";
 import { useNavigate } from "react-router-dom";
 const UserLogin = () => {
   const [userId, setUserName] = useState();
-  const [pwd, setPassword] = useState();
+  
   const navig = useNavigate();
+  const [pwd, setPassword] = useState();
   
   const passHandler = (event) => {
     setPassword(event.target.value);
@@ -14,10 +15,10 @@ const UserLogin = () => {
   const Handler = (event) => {
     event.preventDefault();
     if (userId === "Shivam.singh" && pwd === "Shivam@123") {
-      console.log(userId + pwd);
-      navig("/recipe");
+    
+      navig("/getrecipe");
     } else {
-      alert("UserId Or Password not Match");
+      alert("Something went wrong");
     }
   };
   const userHandler = (event) => {
@@ -28,10 +29,10 @@ const UserLogin = () => {
     <div className="login-page">
       <h1>Welcome Back</h1>
       <form>
-        <input type="text" placeholder="Please enter UserId" onChange={userHandler} />
+        <input type="text" placeholder="UserId Please" onChange={userHandler} />
         <input
           type="password"
-          placeholder="Please enter Password"
+          placeholder="Password please"
           onChange={passHandler}
         />
         <button type="button" onClick={Handler}>

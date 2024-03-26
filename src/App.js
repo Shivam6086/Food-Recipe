@@ -12,11 +12,11 @@ function App() {
       element: <Homepage />,
       children: [
         {
-          path: "/recipe",
+          path: "/getrecipe",
           element: <RecipeFinder />,
         },
         {
-          path: "/login",
+          path: "/getlogin",
           element: <Login />,
         },
       ],
